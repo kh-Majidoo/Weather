@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/7717ecbc00.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="glider.css">
+  <link rel="stylesheet" href="weatheru.css">
+  <title>Weatheru</title>
+</head>
+
+<body>
+  <div id="banner">
+  </div>
+  <div id="wrapper">
+  <main id="one">
+    <h1 id="curr_temp">15° C</h1>
+    <!--<h4 id="one_main_text">Heavy rain</h4>-->
+    <img src="http://cdn.weatherapi.com/weather/64x64/night/116.png" id="one_main_img" width="128" height="128">
+
+    <p id="one_area">Helsinki</p>
+    <p id="one_country">Helsinki</p>
+
+  <div id="search">
+    <input type="text" id="one_buttons_search_bar" class="search" placeholder="  Change location">
+    <button id="one_buttons_search" type="button" class="search"><i class="fas fa-search"></i></button>
+  </div>
+    <button type="button" name="button" id="btn_w">F °</button>
+  </main>
+
+  <!--------------------------------------------------------->
+  <div id="highlights">
+    <div id="status">
+      <div class="Status_div">
+        <p>Wind state</p>
+        <div class="status_div_inner">
+        <i class="fas fa-wind fa-lg"></i>
+        <p><span id="w_speed">--</span> mph</p>
+      </div>
+        <!--<p>WSW</p>-->
+      </div>
+
+      <div class="Status_div">
+        <p>Humidity</p>
+        <div class="status_div_inner">
+        <i class="fas fa-tint fa-lg"></i>
+        <p><span id="humidity">--</span> %</p>
+      </div>
+        <!--<progress id="humidity_bar" value="0" max="100"></progress>-->
+      </div>
+
+      <div class="Status_div">
+        <p>Pressure</p>
+        <div class="status_div_inner">
+        <i class="fas fa-lungs fa-lg"></i>
+        <p><span id="pressure_mb">--</span> mb</p>
+      </div>
+      </div>
+
+      <div class="Status_div">
+        <p>Visibility</p>
+        <div class="status_div_inner">
+        <i class="fas fa-eye fa-lg"></i>
+        <p><span id="visibility">--</span> Km</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--------------------------------------------------------->
+    <div id="forecast">
+    <button type="button" class="glider-prev glide-btn" ><i class="fas fa-angle-left fa-lg"></i></button>
+    <div class="glider" id="forecast_inner"></div>
+    <button type="button" class="glider-next glide-btn"><i class="fas fa-angle-right fa-lg"></i></button>
+  </div>
+
+  <script src="https://kit.fontawesome.com/7717ecbc00.js" crossorigin="anonymous"></script>
+  <script src="glider.js"></script>
+  <script src="weatheru.js"></script>
+
+</body>
+
+</html>
